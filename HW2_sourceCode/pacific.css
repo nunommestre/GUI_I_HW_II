@@ -1,0 +1,103 @@
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+  display: block;
+}
+/* Center the main section */
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-width: 600px;
+  background-color: #86cef1;
+}
+/* Used https://www.ginifab.com/feeds/pms/color_picker_from_image.php to get rgb value of the left half of the sunset image */
+header {
+  color: white;
+  background-image: url("sunset.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 50);
+}
+/* repeat-x to get the background gradient */
+body {
+  background-image: url("ptrbackground.jpg");
+  background-repeat: repeat-x;
+  background-color: #00569f;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* nav floats left content floats right */
+nav {
+  float: left;
+  width: 200px;
+}
+/* changed link appearance */
+div ul:nth-child(2n-1) {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 50);
+  font-size: 20px;
+}
+nav ul {
+  font-size: 1.2em;
+}
+nav a:visited {
+  color: #344873;
+}
+nav a:hover {
+  color: #ffffff;
+}
+#content img {
+  float: left;
+  padding-right: 25px;
+}
+/* Added paddings and margin to match the desired result */
+#content {
+  background-color: white;
+  margin-left: 215px;
+  padding: 10px 25px 25px 30px;
+}
+div ul:nth-child(2n) {
+  list-style-image: url(marker.gif);
+  list-style-position: inside;
+}
+.resort {
+  color: #5688a1;
+  font-weight: bold;
+}
+h1 {
+  margin-bottom: 0;
+  padding: 10px;
+}
+h2 {
+  color: #3399cc;
+}
+/* Modified fonts and gave the footer similar paddings and margins to match content */
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+  font-size: 90%;
+}
+dt {
+  color: #000033;
+}
+footer {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  background-color: white;
+  padding: 25px;
+  margin-left: 215px;
+  font-size: 12px;
+}
